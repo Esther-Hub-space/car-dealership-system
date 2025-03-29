@@ -1,0 +1,315 @@
+/* Updated Homepage.css */
+
+body, #root {
+    font-family: 'Poppins', sans-serif;
+    background-size: cover;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 30px;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+
+// start
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.menus {
+    display: flex;
+    gap: 20px;
+}
+
+/* Normal menu links */
+.menus a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.menus a:hover {
+    color: yellow;
+}
+
+/* Hide menu by default on small screens */
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Responsive Navbar - Dropdown Menu */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .menus {
+        display: none;
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        background-color: black;
+        width: 200px;
+        border-radius: 8px;
+        padding: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+
+    .menus.active {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menus a {
+        padding: 8px 0;
+        font-size: 14px;
+        display: block;
+    }
+}
+
+
+//stop
+
+
+
+
+
+
+
+
+.menus a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s;
+    padding: 8px 15px;
+}
+
+.menus a:hover {
+    color: #0056b3;
+    font-size: 16px;
+}
+
+.signup, .dashboard, .logout {
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.signup:hover, .dashboard:hover, .logout:hover {
+    color: white;
+    font-size: 16px;
+}
+
+.main-content {
+    padding-top: 60px;
+}
+
+.header {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    color: white;
+    padding: 0 50px;
+    position: relative;
+}
+
+.headerdesc {
+    flex: 1;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.title span {
+    color: #007bff;
+}
+
+.headerdesc p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.headerbutton {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.headerbutton:hover {
+    background-color: #0056b3;
+}
+
+.car-search-form {
+    text-align: left;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 30%;
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    min-height: 200px;
+}
+
+.car-search-form h2 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-group i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.message-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.2s ease-in-out;
+    z-index: 10;
+    animation: bounce 2s infinite ease-in-out;
+}
+/* Bounce Animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+.message-icon:active {
+    transform: scale(0.9);
+}
+
+
+.message-card {
+    position: absolute;
+    bottom: 90px;
+    right: 16px;
+    width: 350px;
+    height: 350px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 15px;
+    overflow: hidden;
+    z-index: 15;
+    display: none;
+    top: 30px;
+    z-index: 15;
+}
+
+.message-card.open {
+    display: block;
+    border-radius: 5px;
+}
+.close-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: bold;
+    /*margin-left: auto;  Moves the button to the left */
+
+
+
+.wishlist-icon-heart {
+    color: black;
+    margin-top: 10px; /* Adjust padding as needed */
+}

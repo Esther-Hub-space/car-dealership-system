@@ -1,0 +1,55 @@
+/* Footer stays at the bottom */
+.footer {
+    background-color: black;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: auto; /* Pushes footer to bottom */
+}
+@media (max-width: 768px) {
+    .footer {
+        padding: 15px 10px; /* Reduce padding on smaller screens */
+    }
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  width: 20%;
+  min-width: 150px;
+}
+
+.footer-section h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: blue;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 0px 0;
+  cursor: pointer;
+}
+
+.footer-section ul li:hover {
+  text-decoration: underline;
+  color: blueviolet;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 5px;
+  border-top: 1px solid #444;
+}
+

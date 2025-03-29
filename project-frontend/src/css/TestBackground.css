@@ -1,0 +1,11 @@
+
+
+.test-background {
+    background-image: url('/img/img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh; /* Use vh for viewport height */
+    width: 100vw; /* Use vw for viewport width */
+    margin: 0;
+}

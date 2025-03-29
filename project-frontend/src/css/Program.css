@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url('../images/program.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.home {
+    font-size: 30px;
+    padding-left: 10px;
+    text-decoration: underline;
+} 
+
+.home:hover {
+    color: red;
+}
+
+.overlay {
+    position: fixed;  /* covers the entire window */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+    z-index: 1; /* stay above other elements */
+}
+
+.content {
+    position: relative; /* ensure content appears above the overlay */
+    z-index: 2; /* stay above the overlay */
+    color: #fff; /* light text for readability */
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header, footer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #007BFF;
+    margin-top: 20px;
+}
+
+ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.faq {
+    margin-top: 20px;
+    margin: 10px;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.faq-question {
+    background: #007BFF;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 2px;
+    
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-style: italic; /* Setting answer text to italic */
+    line-height: 2.0; /* Optional: improves readability */
+}
+.process{
+    margin: 10px;
+}
+
+.process ol {
+    padding-left: 15px;
+}
+
+/* Hide scrollbar for Chrome, Safari, and Edge */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for Firefox */
+body {
+    scrollbar-width: none;
+}
+
+/* Ensure no overflow causing scroll */
+html, body {
+    overflow: hidden;
+}

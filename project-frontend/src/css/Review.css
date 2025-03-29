@@ -1,0 +1,143 @@
+/* Center the H1 Title */
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 20px;
+    color: blue;
+    font-style: italic;
+}
+
+/* Enlarged Reviews Container */
+.reviews-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Individual Review Card */
+.review-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.review-card:hover {
+    transform: scale(1.02);
+}
+
+/* Reviewer Image */
+.review-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+/* Review Text */
+.reviewer-info {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.review-text {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.4;
+    font-style: italic;
+}
+
+/* Rating Stars */
+.rating {
+    color: gold;
+    margin-left: 10px;
+}
+
+/* Compact Add Review Section */
+.add-review-section {
+    text-align: center;
+    width: 90%;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 0px;
+}
+
+.add-review-section h2 {
+    font-size: 2.0rem;
+    color: blue;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+/* Compact Review Form */
+#reviewForm {
+    background: #f9f9f9;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#reviewForm label {
+    font-weight: bold;
+    display: block;
+    
+}
+
+#reviewForm input,
+#reviewForm select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Submit Button */
+#reviewForm button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-top: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#reviewForm button:hover {
+    background: #0056b3;
+}
+
+/* Add Review Button */
+#addReviewButton {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+    display: block;
+    margin: 15px auto;
+}
+
+#addReviewButton:hover {
+    background: #218838;
+}

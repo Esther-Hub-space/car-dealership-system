@@ -1,0 +1,180 @@
+  // CarListing.css
+}
+.card{
+  display: grid;
+}
+.car-listing {
+    display: grid;
+    grid-template-columns: repeat(4, 6fr);
+    gap: 16px;
+    padding: 20px;
+}
+
+.car-card {
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.car-card:hover {
+    transform: scale(1.05);
+}
+
+.car-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.car-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.car-info {
+    padding: 10spx;
+    text-align: center;
+}
+
+.car-info h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.car-info p {
+    font-size: 10px;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .car-listing {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .car-listing {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
+
+
+
+// CarDetails.css
+.body {
+  background: top;
+}
+.car-details-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);  /* Glassmorphism Effect */
+    backdrop-filter: blur(12px);
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Image Slider */
+.image-slider {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.image-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out, opacity 0.5s;
+}
+
+/* Next & Prev Buttons */
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.slider-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.prev-btn { left: 10px; }
+.next-btn { right: 10px; }
+
+/* Car Details Section */
+.car-info {
+    padding: 20px;
+    color: #fff;
+}
+
+.car-info h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.car-info p {
+    font-size: 18px;
+    margin: 8px 0;
+    opacity: 0.9;
+}
+
+/* Wishlist Button */
+.wishlist-btn {
+    display: inline-block;
+    width: 100%;
+    background: linear-gradient(135deg, #ff4e50, #fc913a);
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out, background 0.3s;
+}
+
+.wishlist-btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #fc913a, #ff4e50);
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+.header-content{
+    height:200px;
+    padding: 5px;
+    border-radius: 50%;
+
+
+}
